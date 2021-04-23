@@ -12,7 +12,10 @@ function Navbar(){
                     <li>3</li>
                 </ul>
         </nav>*/
-        <header className="navbar">Hello {firstName + " " + lastname}!</header>//curly braces indecates javascript
+        //curly braces indecates javascript
+        <div>
+            <header className="navbar">Hello {firstName + " " + lastname}!</header>
+        </div>
     )
 }
 export default Navbar

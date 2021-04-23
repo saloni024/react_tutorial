@@ -1,4 +1,5 @@
 import React from "react"
+import ContactCard from "./ContactCard"
 
 function MainContent(){
     const date = new Date()
@@ -25,6 +26,37 @@ function MainContent(){
     return(
         <main className="main">
             <p style={/*{color: "navy", textDecoration: "underline"}*/styles}>Good {`${timeOfDay} :) `}<br></br>It is currently about {hours % 12} o'clock!</p>
+            <div className="contact-list">
+                <h3>Contact List</h3>
+                <ContactCard 
+                    name="Dwight K. Schrute"
+                    imgUrl="dwightPic.jpg"
+                    imgAlt="Dwight Schrute"
+                    phone="416-111-2222"
+                    email="dwightkurt.schrute@schrutefarms.com"
+                />
+                <ContactCard 
+                    name="James 'Jim' Duncan Halpert"
+                    imgUrl="jimPic.jpg"
+                    imgAlt="Jim Halpert"
+                    phone="416-333-4444"
+                    email="jimhalpert@gmail.com"
+                />
+                <ContactCard 
+                    name="Pamela 'Pam' Morgan Beesly"
+                    imgUrl="pamPic.jpg"
+                    imgAlt="Pam Beesly"
+                    phone="416-555-6666"
+                    email="pambeesly@gmail.com"
+                />
+                <ContactCard 
+                    name="Micheal Gary Scott"
+                    imgUrl="michealPic.jpg"
+                    imgAlt="Micheal Scott"
+                    phone="416-777-8888"
+                    email="michealscott@dundermifflin.com"
+                />
+            </div>
         </main>
     )
 }
