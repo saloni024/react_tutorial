@@ -4,7 +4,7 @@ import MainContent from "./MainContent"
 import Footer from "./Footer"
 
 
-function App(){
+/*function App(){
     return (
         <div>
             <Navbar />
@@ -12,6 +12,19 @@ function App(){
             <Footer />
         </div>
     )
+}*/
+
+//if the class method has parameters use this.props to access
+class App extends React.Component{
+    render(){
+        return (
+            <div>
+                <Navbar />
+                <MainContent />
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default App
