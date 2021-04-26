@@ -1,9 +1,10 @@
 import React from "react"
+import Form from "./Form"
 
 function Footer(){
     return (
         <footer className="footer">
-            <p>This is a footer element</p>
+            <Form />
         </footer>
     )
 }
